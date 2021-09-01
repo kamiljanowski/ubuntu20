@@ -1,5 +1,5 @@
 #!/bin/bash
-find /var/log -name "*.gz" | tar -czvf kompresja -T -
+find /var/log -name "*.gz" | tar -czvf /root/git/kompresja -T -
 dat=$(date +%Y%m%d)
 touch $dat
-tar -tvf kompresja >> $dat
+tar -tvf /root/git/kompresja >> $dat
